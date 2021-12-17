@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.controller.MainController">
+    <children>
+        <TableView fx:id="userTableView" layoutX="10.0" layoutY="51.0" prefHeight="264.0" prefWidth="477.0" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="313.0" AnchorPane.topAnchor="51.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="53.0" text="Id" />
+                <TableColumn fx:id="firstNameColumn" prefWidth="123.0" text="First name" />
+                <TableColumn fx:id="lastNameColumn" prefWidth="146.0" text="Last name" />
+                <TableColumn fx:id="ageColumn" prefWidth="55.0" text="Age" />
+            </columns>
+        </TableView>
+        <TextField fx:id="searchTxt" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="185.0" />
+        <Button fx:id="searchButton" layoutX="213.0" layoutY="14.0" mnemonicParsing="false" text="Найти" />
+        <Label layoutX="20.0" layoutY="369.0" text="Количество" />
+        <Label fx:id="countLbl" layoutX="93.0" layoutY="369.0" text="Label" />
+
+        <Button layoutX="220.0" layoutY="347.0" mnemonicParsing="false" onAction="#saveUserButton" text="Добавить">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="339.0" layoutY="347.0" mnemonicParsing="false" onAction="#deleteUserButton" text="Удалить">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="448.0" layoutY="347.0" mnemonicParsing="false" onAction="#updateUserButton" text="Обновить">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+      <TableView layoutX="536.0" layoutY="51.0" prefHeight="264.0" prefWidth="211.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Id" />
+          <TableColumn prefWidth="121.0" text="Number" />
+        </columns>
+      </TableView>
+
+    </children>
+</AnchorPane>
